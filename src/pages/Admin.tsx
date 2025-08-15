@@ -1,12 +1,20 @@
 import NavBar from "../components/common/NavBar"
-import { backgroundColor2 } from "../constants/Styles"
+import Dashboard from "../components/admin/Dashboard"
+import { useState } from "react";
 
 const Admin = () => {
-  return (
-    <div className="bg-[#F5F5F6] min-h-screen">
-        <NavBar />
-    </div>
-  )
+    const [isPanelOpen, setIsPanelOpen] = useState(true);
+
+    const togglePanel = () => {
+        setIsPanelOpen((prev) => !prev);
+    };
+
+    return (
+        <div className="bg-[#F5F5F6] min-h-screen">
+            <NavBar togglePanel={togglePanel} />
+            <Dashboard isPanelOpen={isPanelOpen} />
+        </div>
+    )
 }
 
 export default Admin

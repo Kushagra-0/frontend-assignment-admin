@@ -8,7 +8,7 @@ import profile from "../../assets/icons/navabar/profile.jpg"
 import noteIcon1 from "../../assets/icons/navabar/note-icon-01.png";
 import noteIcon2 from "../../assets/icons/navabar/note-icon-02.png"
 
-const NavBar = () => {
+const NavBar = ({ togglePanel }: any) => {
     return (
         <div className="bg-[#FFFFFF] text-white px-6 py-4 flex justify-between items-center">
             <div className="flex items-center gap-6">
@@ -17,7 +17,9 @@ const NavBar = () => {
                     <img src={logoText} alt="Logo" className="h-10 w-auto" />
 
                 </Link>
-                <img src={barIcon} alt="Logo" className="h-4 w-auto" />
+                <button onClick={togglePanel}>
+                    <img src={barIcon} alt="Menu" className="h-4 w-auto" />
+                </button>
                 <div className="flex items-center bg-[#F5F5F6] rounded-md px-3 py-2">
                     <img src={searchNormal} alt="Search Icon" className="w-4 h-4 mr-2" />
                     <input
