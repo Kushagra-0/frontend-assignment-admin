@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { menuItems } from "../../constants/MenuItems";
 import MenuItem from "./MenuItems";
+import AffiliateDashboard from "./tabs/affiliate/AffiliateDashboard";
 
 
 const Dashboard = ({ isPanelOpen }: any) => {
@@ -34,7 +35,7 @@ const Dashboard = ({ isPanelOpen }: any) => {
                 {activePanel === "dashboard" && <DashboardMain />}
                 {activePanel === "users" && <Users />}
                 {activePanel === "settings" && <Settings />}
-                {activePanel === "affiliate-dashboard" && <h2>Affiliate Dashboard</h2>}
+                {activePanel === "affiliate-dashboard" && <AffiliateDashboard />}
                 {activePanel === "affiliate-commission" && <h2>Affiliate Commission</h2>}
                 {activePanel === "commission-summary" && <h2>Commission Summary</h2>}
                 {activePanel === "commission-reports" && <h2>Commission Reports</h2>}
