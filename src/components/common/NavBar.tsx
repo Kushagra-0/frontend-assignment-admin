@@ -10,7 +10,7 @@ import noteIcon2 from "../../assets/icons/navabar/note-icon-02.png"
 
 const NavBar = ({ togglePanel }: any) => {
     return (
-        <div className="bg-[#FFFFFF] text-white px-6 py-4 flex justify-between items-center">
+        <div className="fixed top-0 left-0 w-full bg-[#FFFFFF] text-white px-6 py-4 flex justify-between items-center z-50">
             <div className="flex items-center gap-6">
                 <Link to="/" className="flex items-center">
                     <img src={logoSymbol} alt="Logo" className="h-10 w-auto" />

@@ -10,7 +10,7 @@ const Admin = () => {
     };
 
     return (
-        <div className="bg-[#F5F5F6] min-h-screen">
+        <div className="bg-[#F5F5F6] min-h-screen overflow-y-scroll">
             <NavBar togglePanel={togglePanel} />
             <Dashboard isPanelOpen={isPanelOpen} />
         </div>

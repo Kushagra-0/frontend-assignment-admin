@@ -56,15 +56,18 @@ export const menuItems = [
         subItems: [
             { 
                 key: "affiliate-dashboard", 
-                label: "Dashboard" 
+                label: "Dashboard",
+                parent: "affiliate",
             },
             { 
-                key: "commission", 
-                label: "Commission" 
+                key: "affiliate-commission", 
+                label: "Commission",
+                parent: "affiliate",
             },
             { 
                 key: "affiliate-coupons", 
-                label: "Coupons" 
+                label: "Coupons",
+                parent: "affiliate",
             },
              { 
                 key: "affiliate-payments", 
@@ -72,11 +75,13 @@ export const menuItems = [
                 subItems: [
                     { 
                         key: "affiliate-payment-pending", 
-                        label: "Payment Pending" 
+                        label: "Payment Pending",
+                        parent: "affiliate-payments"
                     },
                     { 
                         key: "affiliate-payments-history", 
-                        label: "Payment History" 
+                        label: "Payment History",
+                        parent: "affiliate-payments"
                     },
                 ], 
             },
