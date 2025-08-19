@@ -4,6 +4,9 @@ import MenuItem from "./MenuItems";
 import AffiliateDashboard from "./tabs/affiliate/AffiliateDashboard";
 import AffiliateCommission from "./tabs/affiliate/AffiliateCommission";
 import Breadcrumb from "../common/Breadcrumb";
+import AffiliateCoupons from "./tabs/affiliate/AffiliateCoupons";
+import PaymentPending from "./tabs/affiliate/payments/PaymentPending";
+import PaymentHistory from "./tabs/affiliate/payments/PaymentHistory";
 
 
 const Dashboard = ({ isPanelOpen }: any) => {
@@ -37,9 +40,9 @@ const Dashboard = ({ isPanelOpen }: any) => {
                 {activePanel === "settings" && <Settings />}
                 {activePanel === "affiliate-dashboard" && <AffiliateDashboard />}
                 {activePanel === "affiliate-commission" && <AffiliateCommission />}
-                {activePanel === "commission-summary" && <h2>Commission Summary</h2>}
-                {activePanel === "commission-reports" && <h2>Commission Reports</h2>}
-                {activePanel === "affiliate-sales" && <h2>Affiliate Sales</h2>}
+                {activePanel === "affiliate-coupons" && <AffiliateCoupons />}
+                {activePanel === "affiliate-payment-pending" && <PaymentPending />}
+                {activePanel === "affiliate-payments-history" && <PaymentHistory />}
             </div>
         </div>
     );
