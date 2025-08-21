@@ -34,6 +34,7 @@ const PaymentHistory = () => {
             <table className="min-w-[1600px] w-full">
               <thead>
                 <tr className="border-gray-200 items-center justify-center">
+                  <th className="text-left py-3 px-4 font-semibold"></th>
                   <th className="text-left py-3 px-4 font-semibold">Doctor Name</th>
                   <th className="text-left py-3 px-4 font-semibold">E-email</th>
                   <th className="text-left py-3 px-4 font-semibold">Mobile</th>
@@ -48,6 +49,9 @@ const PaymentHistory = () => {
               <tbody>
                 {pendingPaymentRequests2.map((request) => (
                   <tr key={request.id} className="border-b border-gray-300">
+                    <td>
+                      <input type="checkbox"></input>
+                    </td>
                     <td className="py-4 px-4">
                       <div className="flex items-center rounded-full">
                         <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3">

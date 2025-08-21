@@ -7,6 +7,7 @@ import Breadcrumb from "../common/Breadcrumb";
 import AffiliateCoupons from "./tabs/affiliate/AffiliateCoupons";
 import PaymentPending from "./tabs/affiliate/payments/PaymentPending";
 import PaymentHistory from "./tabs/affiliate/payments/PaymentHistory";
+import CustomizationApp from "./tabs/customization/CustomizatonApp";
 
 
 const Dashboard = ({ isPanelOpen }: any) => {
@@ -43,6 +44,7 @@ const Dashboard = ({ isPanelOpen }: any) => {
                 {activePanel === "affiliate-coupons" && <AffiliateCoupons />}
                 {activePanel === "affiliate-payment-pending" && <PaymentPending />}
                 {activePanel === "affiliate-payments-history" && <PaymentHistory />}
+                {activePanel === "customization-app" && <CustomizationApp />}
             </div>
         </div>
     );

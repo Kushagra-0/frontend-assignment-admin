@@ -94,5 +94,22 @@ export const menuItems = [
                 label: "Doctors" 
             },
         ]
+    },
+    {
+        key: "customization", 
+        label: "Customizaton", 
+        icon: menuIcon10,
+        subItems: [
+            {
+                key: "customization-web", 
+                label: "Web",
+                parent: "customization",
+            },
+            {
+                key: "customization-app", 
+                label: "App ",
+                parent: "customization",
+            },
+        ]
     }
 ];
